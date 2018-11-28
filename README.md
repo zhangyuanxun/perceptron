@@ -1,5 +1,5 @@
 # Perceptron learning algorithm in Matlab
-A Matlab demo tries to understand the perceptron learning from geometric view. The process of learning algorithm is to maximizing the angle between weight vector and feasible boundary. Hence, the optimal weights will be perpendicular to the feasible boundary.  
+A Matlab demo tries to understand the perceptron learning from the geometric view. The process of learning algorithm is to maximize the angle between weight vector and feasible boundary. Hence, the optimal weights will be perpendicular to the feasible boundary.  
 
 ## Reference
 This demo is revised based on Geoffrey E. Hinton course in Coursera[[link]](http://www.cs.toronto.edu/~tijmen/csc321/)
