@@ -38,6 +38,9 @@ if (~exist('line','var'))
 else
     lg = legend([arrow, line],{'Weight vector', 'Feasible boundary'}, 'location', 'Northwest');
 end
+
+t = ['Num of iteration = ', num2str(iter)];
+title(t);
 set(lg, 'FontSize', 10);
 xlim([-2,2]);
 ylim([-2,2]);
@@ -51,9 +54,9 @@ frame = getframe(f);
 im = frame2im(frame); 
 [imind,cm] = rgb2ind(im,256); 
 if iter == 0
-    imwrite(imind,cm,'demo/demo3.gif', 'gif', 'Loopcount',inf); 
+    imwrite(imind,cm,'demo/demo4.gif', 'gif', 'Loopcount',inf); 
 else 
-    imwrite(imind,cm,'demo/demo3.gif', 'gif', 'WriteMode','append'); 
+    imwrite(imind,cm,'demo/demo4.gif', 'gif', 'WriteMode','append'); 
 end 
 
 end
