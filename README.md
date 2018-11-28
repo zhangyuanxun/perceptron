@@ -8,7 +8,7 @@ This demo is revised based on Geoffrey E. Hinton course in Coursera[[link]](http
 This code is tested by Matlab R2017a
 
 ## Usage example
-####Run the demo using datasets that exists feasible boundary
+###Run the demo using datasets that exists feasible boundary
 
 ```
 load datasets/dataset1
@@ -16,7 +16,7 @@ learn_perceptron(neg_examples_nobias,pos_examples_nobias,w_init,w_gen_feas)
 ```
 <div><img align="middle" src ="demo/demo1.gif"/></div><br />
 
-####Run the demo using datasets that doesn't  feasible boundary
+###Run the demo using datasets that doesn't  feasible boundary
 
 ```
 load datasets/dataset4
