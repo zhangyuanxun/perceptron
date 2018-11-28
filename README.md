@@ -1,1 +1,2 @@
-# perceptron
+# Perceptron learning algorithm in Matlab
+
