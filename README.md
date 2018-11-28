@@ -16,18 +16,8 @@ learn_perceptron(neg_examples_nobias,pos_examples_nobias,w_init,w_gen_feas)
 ```
 <div><img align="middle" src ="demo/demo1.gif"/></div>
 
-or
-```
-load datasets/dataset3
-learn_perceptron(neg_examples_nobias,pos_examples_nobias,w_init,w_gen_feas)
-```
-Run the demo using datasets that doesn't exist feasible boundary
-```
-load datasets/dataset2
-learn_perceptron(neg_examples_nobias,pos_examples_nobias,w_init,w_gen_feas)
-```
-or
 ```
 load datasets/dataset4
 learn_perceptron(neg_examples_nobias,pos_examples_nobias,w_init,w_gen_feas)
 ```
+<div><img align="middle" src ="demo/demo4.gif"/></div>
