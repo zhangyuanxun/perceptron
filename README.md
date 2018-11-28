@@ -14,7 +14,7 @@ Run the demo using datasets that exists feasible boundary
 load datasets/dataset1
 learn_perceptron(neg_examples_nobias,pos_examples_nobias,w_init,w_gen_feas)
 ```
-<div style="text-align:center"><img src ="..." /></div>
+<div style="text-align:center"><img src ="demo/demo1.gif" /></div>
 
 or
 ```
