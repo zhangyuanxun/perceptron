@@ -14,18 +14,16 @@ This code is tested by Matlab R2017a.
 load datasets/dataset1
 learn_perceptron(neg_examples_nobias,pos_examples_nobias,w_init,w_gen_feas)
 ```
-<div><img align="middle" src ="demo/demo1.gif"/></div>
-
+<p align="center"><img width="70%" src=""demo/demo1.gif" /></p>
 ```
 load datasets/dataset3
 learn_perceptron(neg_examples_nobias,pos_examples_nobias,w_init,w_gen_feas)
 ```
-<div><img align="middle" src ="demo/demo3.gif"/></div>
-
+<p align="center"><img width="70%" src=""demo/demo3.gif" /></p>
 ### Run the demo using dataset that doesn't exist feasible boundary.
 
 ```
 load datasets/dataset4
 learn_perceptron(neg_examples_nobias,pos_examples_nobias,w_init,w_gen_feas)
 ```
-<div><img align="middle" src ="demo/demo4.gif"/></div>
+<p align="center"><img width="70%" src=""demo/demo4.gif" /></p>
