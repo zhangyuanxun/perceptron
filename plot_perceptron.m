@@ -56,9 +56,9 @@ frame = getframe(f);
 im = frame2im(frame); 
 [imind,cm] = rgb2ind(im,256); 
 if iter == 0
-    imwrite(imind,cm,'demo/demo3.gif', 'gif', 'Loopcount',inf); 
+    imwrite(imind,cm,'demo/demo4.gif', 'gif', 'Loopcount',inf); 
 else 
-    imwrite(imind,cm,'demo/demo3.gif', 'gif', 'WriteMode','append'); 
+    imwrite(imind,cm,'demo/demo4.gif', 'gif', 'WriteMode','append'); 
 end 
 
 end
