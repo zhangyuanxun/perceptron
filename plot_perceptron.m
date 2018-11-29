@@ -24,8 +24,10 @@ end
 % plot decision boundary
 all_samples = [neg_examples(:); pos_examples(:)];
 if (~isempty(w_gen_feas))
-    line = plot_decisionboundary(all_samples, w_gen_feas);
+    fesi_boundary = plot_decisionboundary(all_samples, w_gen_feas, '-k');
 end
+
+learn_boundary = plot_decisionboundary(all_samples, weights, '--m');
 
 % plot weight vector arrow, start from middle point of boundary line
 % normalize the weights
@@ -33,10 +35,10 @@ v = [weights(1); weights(2)];
 v = v / norm(v);
 arrow = quiver(0, 0, v(1), v(2));
 set(arrow, 'LineWidth', 1.5, 'color', 'red');
-if (~exist('line','var'))
-    lg = legend([arrow],{'Weight vector'}, 'location', 'Northwest');
+if (~exist('fesi_boundary','var'))
+    lg = legend([arrow, learn_boundary],{'Weight vector', 'Learned boundary'}, 'location', 'Northwest');
 else
-    lg = legend([arrow, line],{'Weight vector', 'Feasible boundary'}, 'location', 'Northwest');
+    lg = legend([arrow, fesi_boundary, learn_boundary],{'Weight vector', 'Feasible boundary', 'Learned boundary'}, 'location', 'Northwest');
 end
 
 t = ['Num of iteration = ', num2str(iter)];
@@ -54,9 +56,9 @@ frame = getframe(f);
 im = frame2im(frame); 
 [imind,cm] = rgb2ind(im,256); 
 if iter == 0
-    imwrite(imind,cm,'demo/demo4.gif', 'gif', 'Loopcount',inf); 
+    imwrite(imind,cm,'demo/demo2.gif', 'gif', 'Loopcount',inf); 
 else 
-    imwrite(imind,cm,'demo/demo4.gif', 'gif', 'WriteMode','append'); 
+    imwrite(imind,cm,'demo/demo2.gif', 'gif', 'WriteMode','append'); 
 end 
 
 end
